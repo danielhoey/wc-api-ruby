@@ -62,7 +62,6 @@ module WooCommerce
         .join("%26")
         .gsub("%5B", "%255B")
         .gsub("%5D", "%255D")
-
       string_to_sign = "#{@method}&#{base_request_uri}&#{query_string}"
 
       if @version == "v3"
